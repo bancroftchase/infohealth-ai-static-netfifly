@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>InfoHealth AI – General Medicine</title>
-  <link rel="icon" href="public/logo-silver.png" />
+  <link rel="icon" href="logo-silver.png" />
   <style>
     * { box-sizing: border-box; }
     body {
@@ -671,7 +671,7 @@
     <div class="wrapper">
       <div class="header">
         <button class="translate-btn" id="translateBtn" onclick="toggleLanguage()">Español</button>
-        <img src="./infohealth-logo.png" alt="InfoHealth AI Logo" style="height: 80px; max-width: 90%; object-fit: contain;">
+        <img src="infohealth-logo.png" alt="InfoHealth AI Logo" style="height: 80px; max-width: 90%; object-fit: contain;">
       </div>
 
       <div class="cards-container">
@@ -690,7 +690,7 @@
           <div class="cards">
             <div class="card" onclick="showCalendar()">Calendar</div>
             <div class="card" onclick="showMyInfo()">My Info</div>
-            <div class="card" onclick="showAppointments(); openVideo('https://infohealthai.com/media/appointments.mp4')">Appointments</div>
+            <div class="card" onclick="showAppointments()">Appointments</div>
             <div class="card" onclick="showMedications()">Medications</div>
           </div>
         </div>
@@ -709,7 +709,7 @@
       <div class="chat" id="chatBox">
         <div style="display: flex; align-items: flex-start; margin-bottom: 0.8rem; justify-content: flex-start;">
           <div style="width: 28px; height: 28px; border-radius: 50%; overflow: hidden; flex-shrink: 0; margin-right: 0.4rem;">
-            <img src="./infohealth-logo-small.png" alt="InfoHealth AI" style="width: 100%; height: 100%; object-fit: cover;" />
+            <img src="infohealth-logo-small.png" alt="InfoHealth AI" style="width: 100%; height: 100%; object-fit: cover;" />
           </div>
           <div style="background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 12px; padding: 12px 16px; max-width: calc(75% - 32px); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; font-family: 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.4; color: #555; box-sizing: border-box;">
             <span style="display: block; text-align: center; width: 100%;">Welcome to InfoHealth AI. I provide health information for educational purposes. Always consult healthcare professionals for diagnosis and treatment.</span>
@@ -793,8 +793,8 @@
         wrap.className = `bubble-wrapper ${role}`;
 
         const avatar = role === 'user' 
-          ? './infohealth-user-logo.png'
-          : './infohealth-logo-small.png';
+          ? 'infohealth-user-logo.png'
+          : 'infohealth-logo-small.png';
 
         wrap.innerHTML = `
           <div class="avatar"><img src="${avatar}" alt="${role}" /></div>
@@ -1090,6 +1090,7 @@ Try asking:
 
 Click the topic cards above for quick access!`;
       }
+      
 
       // Calendar Functions
       let currentCalendarDate = new Date();
